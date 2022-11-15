@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-size: 16px;
+}
+a   {
+    color: white;
+    font-size: 18px;
+}
+:root    {
+    --primary-color : #F44336;
+    --gray-color    : #616161;
+    --light-gray    : #DDDDDD;
+    --lighter-color : #F1F1F1;
+}
+body    {
+    display: flex;
+    flex-direction: row;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    position: relative;
+}
+/*aside styling*/
+aside   {
+    display: flex;
+    align-content: space-around;
+    height: 100vh;
+    width: 15%;
+    box-sizing: border-box;
+    background-color: var(--primary-color);
+    padding: 5.5% 1.5%;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+nav     {
+    display: grid;
+    align-items: start;
+    gap: 19%;
+    height: fit-content;
+    overflow: visible;
+    width: 100%;
+}
+nav ul li   {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 2% 0;
+    width: 100%;
+}
+nav ul li a {
+   display: block;
+    padding: 7px;
+    width: 100%;
+    transition: all linear 400ms;
+}
+nav ul li a:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+aside #logo p {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 0 0 0 7px;
+}
+/*main styling*/
+.side   {
+    width: 87%;
+}
+main    {
+    padding: 5.5% 3%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+/*repeated forma styling*/
+h1  {
+    font-size: 64px;
+    font-weight: 600;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+.title  {
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+.title::after   {
+    content: "" ;
+    display: block;
+    height: 9px;
+    width: 65px;
+    background-color: red;
+    border-radius: 4px;
+    margin-top: 19px;
+}
+.text-container {
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.strong {
+    font-weight: 600;
+}
+.disabled {
+    opacity: 50%;
+}
+.big    {
+    font-size: 1.5em;
+}
+.extra-big  {
+    font-size: 2em;
+}
+.primary-bg {
+    background-color: var(--primary-color) !important;
+    color: #ffffff !important;
+}
+.gray-bg    {
+    background-color: var(--gray-color) !important;
+    color: #ffffff !important;
+}
+.p-2 {
+    padding: 2em !important;
+}
+.border {
+    border-top: 1px solid var(--light-gray);
+}
+.button {
+    border: none;
+    cursor: pointer;
+}
+/*showcase*/
+#showcase .container  {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#showcase .container .colum-duo {
+    width: 49.6%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7em;
+}
+#showcase   img {
+    position: relative;
+    width: 100%;
+}
+#showcase   .img    {
+    position: relative;
+}
+#showcase .img::after    {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255,255,255,0.2);
+    z-index: 3;
+}
+#showcase .img:hover::after {
+    background: none;
+}
+/*designers*/
+#designers  .cards  {
+    display: flex;
+    gap: 0.5em;
+    box-sizing: border-box;
+    width: 100%;
+}
+#designers .cards .card {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background-color: var(--lighter-color);
+    width: 33%;
+}
+#designers .cards .card .card-buttom    {
+    padding: 0 1em 1em 1em;
+}
+#designers .card-top img    {
+    width: 100%;
+    filter: grayscale(80%);
+}
+/*Packages*/
+.table   {
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+.colum  {
+    display: flex;
+    flex-direction: column;
+    width: 49.5%;
+}
+.row  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    background-color: var(--lighter-color) ;
+}
+.button   {
+    padding: 0.8em 1.5em !important;
+    border: none;
+    transition: all linear 400ms;
+}
+.button:hover    {
+    background-color: #000000 !important;
+    color: #ffffff;
+}
+
+.w-button   {
+    background-color: #ffffff !important;
+}
+.p-button   {
+    background-color: var(--primary-color) !important;
+    color: #ffffff !important;
+}
+/*contact styling*/
+form  {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+form>div    {
+    display: flex;
+    flex-direction: column;
+}
+input   {
+    line-height: 3em;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 0 1em;
+}
+[type="button"] {
+    padding: 0 !important;
+}
+/*footer styling*/
+footer {
+    padding: 2em 3%;
+    background-color: var(--light-gray);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer>p a    {
+    color: #000000;
+    text-decoration: underline;
+}
+.icons  {
+    display: flex;
+    flex-direction: row;
+    gap: 2.4em;
+}
+footer .icons a i {
+    color: var(--primary-color);
+    font-size: 2.2em;
+    transition: color linear 400ms;
+}
+footer .icons a:hover i{
+    color: #000;
+}
+
+/*thank you for checking out my code */
+/*wrote by zaid samadi*/
